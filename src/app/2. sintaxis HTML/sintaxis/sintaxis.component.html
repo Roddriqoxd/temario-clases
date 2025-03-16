@@ -1,0 +1,28 @@
+<p>{{ saludo }} Dev Code</p>
+<p>{{ 1 * 2 }} Dev Code</p>
+<p>{{ true }} Dev Code</p>
+<p>{{ funcionSaludar() }} Dev Code</p>
+<p>{{ 'Quiero decirles '+ saludo }} Dev Code</p>
+
+<p class="rojo">ejemplo 1</p>
+<p [class]="classColor">Ejemplo 2</p>
+<p [id]="idElement">Ejemplo 3</p>
+<p [style]="colorStyle">Ejemplo 4</p>
+
+<p [class.rojo]="false">Ejemplo 5</p>
+<p [class]="{rojo: true , fondo: true}">Ejemplo 5</p>
+
+<p [style.color]="blueColor">Ejemplo 6</p>
+<p [style.fontSize.px]="40">Ejemplo 7</p>
+<p [style]="{color: 'blue', fontSize: '40px'}">Ejemplo 8</p>
+
+<p [attr.data-id]="idElement">Ejemplo 9</p>
+<p data-id="idElement">Ejemplo 10</p>
+
+<!-- no funciona -->
+<button onclick="saludarConsole()">Enviar</button>
+
+<!-- <button (click)="saludarConsole()">Enviar</button> -->
+
+<button (click)="saludarConsole($event)">Enviar</button>
+
