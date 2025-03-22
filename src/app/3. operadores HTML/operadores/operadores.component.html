@@ -1,0 +1,37 @@
+<button (click)="cambiarNumero()">cambiar</button>
+
+@if (condicion=== 1) {
+  <p>Hola la variable es igual a 1</p>
+} @else if (condicion=== 2) {
+  <p>Hola la variable es igual a 2</p>
+} @else {
+  <p>Hola la variable es mayor a 2</p>
+}
+
+@for (numero of arrayNumero; track $index; let first = $first) {
+  <label [class.red]="first">{{ numero}}</label>
+  <br>
+} @empty {
+  <p>No hay elementos</p>
+}
+
+
+@switch (condicion2) {
+  @case (1) {
+    Case A.
+  }
+  @case (2) {
+    Case B.
+  }
+  @default {
+    Default case.
+  }
+}
+
+<p #elementoEjemplo  (click)="mostrar(elementoEjemplo)">hover</p>
+
+@defer (on hover(elementoEjemplo)) {
+  <p>Este contenido se carga al final</p>
+} @placeholder {
+  <p>Este contenido se carga al principio</p>
+}

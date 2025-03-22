@@ -25,4 +25,8 @@
 <!-- <button (click)="saludarConsole()">Enviar</button> -->
 
 <button (click)="saludarConsole($event)">Enviar</button>
+<input type="text" (keyup.enter)="mostrarEnConsola()">
 
+
+<input type="text" [(ngModel)]="name">
+<label for="">{{name}}</label>
