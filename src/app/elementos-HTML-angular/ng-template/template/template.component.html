@@ -1,0 +1,33 @@
+<p>Soy el componente template</p>
+
+<!-- primer caso -->
+
+<ng-container [ngTemplateOutlet]="saludo"></ng-container>
+
+
+<ng-template #saludo>
+  <p>Hola soy un componente template</p>
+</ng-template>
+
+
+<!-- Segundo caso -->
+<ng-template #contenedor></ng-template>
+<button (click)="renderizar()">Renderizar</button>
+
+<!-- tercer caso -->
+
+<!-- en caso de renderizar un componente -->
+ @if (saludar) {
+  <app-saludo></app-saludo>
+ }
+
+ <button (click)="saludarCondicional()">Saludar</button>
+
+ <!-- en caso de renderizar varios componentes -->
+  <ng-template #elementRef></ng-template>
+
+  <button (click)="renderComponent()" >Renderizar dinamicamente</button>
+
+
+
+

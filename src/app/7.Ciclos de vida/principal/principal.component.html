@@ -1,0 +1,9 @@
+@if (isComponetVisible) {
+  <ciclo-vida [nombre]="nombre">
+    <p>Soy el contenido</p>
+  </ciclo-vida>
+}
+
+<button (click)="cambiarValor()" >Cambiar el valor</button>
+<button (click)="cambiarObjeto()" >Cambiar objeto</button>
+<button (click)="destrozarcomponente()">Destrozar</button>
