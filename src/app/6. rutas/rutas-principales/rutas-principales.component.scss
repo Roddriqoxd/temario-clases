@@ -6,3 +6,16 @@
   background-color: #f8f9fa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #81a3c5;
+}
+
+
+.active {
+  color: #ff0000;
+}

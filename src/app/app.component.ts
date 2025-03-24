@@ -9,11 +9,12 @@ import { TemplateComponent } from "./elementos-HTML-angular/ng-template/template
 import { SaludoComponent } from "./elementos-HTML-angular/ng-template/saludo/saludo.component";
 import { MainComponent } from "./elementos-HTML-angular/ng-content/main/main.component";
 import { CicloVidaComponent } from './7.Ciclos de vida/ciclo-vida/ciclo-vida.component';
-import { PrincipalComponent } from "./7.Ciclos de vida/principal/principal.component";
+import { RutasPrincipalesComponent } from "./6. rutas/rutas-principales/rutas-principales.component";
+import { ExampleComponent } from "./8. Directivas/example/example.component";
 
 @Component({
   selector: 'app-root',
-  imports: [ComponentePadreComponent, ViewChildComponent, TemplateComponent, SaludoComponent, MainComponent, CicloVidaComponent, PrincipalComponent],
+  imports: [RouterOutlet, RutasPrincipalesComponent, ExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

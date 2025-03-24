@@ -1,0 +1,12 @@
+<section class="menu">
+  <a [routerLink]="['/sintaxis']" [routerLinkActive]="'active'">Sintaxis</a>
+  <a [routerLink]="['/operadores']"  [routerLinkActive]="'active'">Operadores</a>
+  <a [routerLink]="['/ciclos-vida']"  [routerLinkActive]="'active'">Ciclos de vida</a>
+  <a [routerLink]="['/rutas-hijas']"  [routerLinkActive]="'active'">Rutas hijas</a>
+  <a [routerLink]="['/parametros/rodrigo']"  [routerLinkActive]="'active'">Parametros</a>
+  <!-- tetear si esta recargando la pagina} -->
+  <a (click)="cambiarValor()">{{title}}</a>
+</section>
+<section class="main">
+  <router-outlet></router-outlet>
+</section>

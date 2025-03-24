@@ -1,0 +1,10 @@
+<section class="menu">
+  <p>Holas {{saludo}}</p>
+  <a [routerLink]="['/rutas-hijas/hijo1']" [routerLinkActive]="'active'">Sintaxis</a>
+  <a [routerLink]="['/rutas-hijas/hijo2']"  [routerLinkActive]="'active'">Operadores</a>
+  <!-- tetear si esta recargando la pagina} -->
+</section>
+<section class="main">
+
+  <router-outlet></router-outlet>
+</section>

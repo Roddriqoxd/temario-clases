@@ -1,0 +1,9 @@
+
+@for (item of data; track $index) {
+  <div>
+    <p>{{item.nombre | modificador: 'Estudiante'}}</p>
+    <p modificadorDirective [color]="'green'"  [style.color]="'red'">{{item.apellido}}</p>
+    <p>{{item.asignatura}}</p>
+    <p>{{fecha | date:'MMMM --- dd --- yyyy'}}</p>
+  </div>
+}

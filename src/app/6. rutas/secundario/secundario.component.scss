@@ -1,8 +1,18 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  background-color: #9cc581;
+}
+
+
 .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
+  width: 1000px;
   background-color: #f8f9fa;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

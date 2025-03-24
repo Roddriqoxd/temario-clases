@@ -7,7 +7,7 @@ import { CicloVidaComponent } from "../ciclo-vida/ciclo-vida.component";
   templateUrl: './principal.component.html',
   styleUrl: './principal.component.scss'
 })
-export class PrincipalComponent {
+ export default class PrincipalComponent {
 nombre: string = 'Juan';
 data: {nombre: string, apellido: string} = {nombre: 'Juan', apellido: 'Perez'};
 isComponetVisible: boolean = true;
